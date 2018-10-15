@@ -10,6 +10,7 @@
 			</v-flex>
 			<v-flex xs12 sm3 > </v-flex>
 			</v-layout>
+			<myFooter/>
 	   	</v-app>
   </div>
 </template>
@@ -18,13 +19,15 @@
 import myHead from "./components/myHead.vue";
 import myInput from "./components/myInput.vue";
 import quoteContainer from "./components/quoteContainer";
+import myFooter from "./components/myFooter.vue";
 
 export default {
   name: "app",
   components: {
     myHead,
     myInput,
-    quoteContainer
+    quoteContainer,
+    myFooter
   },
   data: () => {
     return {

@@ -2,13 +2,12 @@
   <div id="app">
 		<v-app>
 			<v-layout row>
-			<v-flex xs12 sm3 > </v-flex>
-			<v-flex xs12 sm6 >
+
+			<v-flex xs12 sm6 offset-sm3>
 				<myHead :currentQuote="quoteArray.length" />
 				<myInput v-on:newQuote="addQuote"/>
 				<quoteContainer :quoteArray="quoteArray"/>
 			</v-flex>
-			<v-flex xs12 sm3 > </v-flex>
 			</v-layout>
 			<myFooter/>
 	   	</v-app>

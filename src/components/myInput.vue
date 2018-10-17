@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<v-flex xs12>
         <v-textarea
           solo
 		  v-model="quote"
@@ -8,7 +7,6 @@
           label="Enter your quote here..."
         ></v-textarea>
 		<v-btn color="info" :disabled="disabled" v-on:click="$emit('newQuote', quote); quote=''">Add Quote</v-btn>
-      </v-flex>
 	</div>
 </template>
 
